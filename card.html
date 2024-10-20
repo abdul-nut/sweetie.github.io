@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Birthday Card</title>
+        <!-- Google Font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="cardstyle.css" />
+
+    </head>
+    <body>
+        <audio id="background-music" autoplay loop>
+            <source src="song.mp3" type="audio/mpeg">
+            <!-- Ganti music.mp3 dengan nama file musik Anda -->
+            Your browser does not support the audio element.
+        </audio>
+        <div class="card">
+            <div class="outside">
+                <div class="front">
+                    <p>Happy Birthday</p>
+                    <div class="cake">
+                        <div class="top-layer"></div>
+                        <div class="middle-layer"></div>
+                        <div class="bottom-layer"></div>
+                        <div class="candle"></div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="inside">
+                <p>Selamat Ulang Tahun Sweetiee❤️. Setelah kamu bisa membuka
+                    website ini
+                    artinya kamu udah ketemu sama aku. aku harap kamu senang
+                    dengan hadiah
+                    yang aku siapkan maaf kalo aku ga manis seperti yang kamu
+                    inginkan. tapi
+                    inilah aku apa adanya (✿◡‿◡). sampai jumpa di anniv kita
+                    yang
+                    ketiga tahun （づ￣3￣）づ╭❤️～
+                </p>
+                <h1>&#127873;</h1>
+            </div>
+
+        </div>
+        <div class="button-container">
+            <button
+                class="btn btn-lg btn-primary w-10 fs-6"
+                id="play-music">play music</button>
+        </div>
+        <script>
+            document.getElementById('play-music').addEventListener('click', function() {
+              document.getElementById('background-music').play();
+            });
+           </script>
+    </body>
+</html>
